@@ -1,4 +1,4 @@
-#Índice
+# Índice
 1. [Introducción](#Informacion sobre la tarea)
 2. [Información sobre la tarea](#Informacion sobre la tarea)
 	- [Objetivo](#Objetivo)
