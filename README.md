@@ -11,6 +11,7 @@
 Este repositorio ha sido creado para documentar y mostrar los scripts utilizados en la tarea "AWS: NextCloud y AWS CLI". 
 
 Parte del módulo **Fundamentos de Hardware, correspondiente al curso ASIR_1 (2024 - 2025)**.
+El material usado (scripts) ha sido entregado por nuestro profesor (Paco Cuadrado Fernandez)
 
 ## Información sobre la tarea
 ### Objetivo
