@@ -1,7 +1,7 @@
 #=================
 # Paco Cuadrado fcuadradoa01@educantabria.es (Angel San Miguel)
 # v1.0 - 2025-03-18
-# Descripci贸n: Crea una instancia EC2 en el VPC y subred dadas como parametros
+# Descripci脙鲁n: Crea una instancia EC2 en el VPC y subred dadas como parametros
 # Powershell version: 5.1
 #=================
 # paso de parametros:
@@ -16,7 +16,7 @@ param (
 )
 
 
-# Configurar la regi贸n
+# Configurar la regi脙鲁n
 $region = "us-east-1"
 #
 # Configura tus variables
@@ -58,19 +58,21 @@ aws ec2 authorize-security-group-ingress `
     --cidr 0.0.0.0/0 `
     --output text
 
+Write-Host "==11: abro el puerto 3306"
+aws ec2 authorize-security-group-ingress `
+    --group-id $securityGroupId `
+    --region $region `
+    --protocol tcp `
+    --port 3306 `
+    --cidr 0.0.0.0/0 `
+    --output text
 
 # Script de User Data para instalar Apache
-Write-Host "==19: Actualizaci髇 e instalaci髇 de MariDB-Server"
+Write-Host "==19: Actualizaci贸n e instalaci贸n de MariDB-Server"
 $userData = @"
 #!/bin/bash
 sudo apt update -y && sudo apt dist-upgrade -y
-sudo apt install -y apache2 php php-mbstring php-gd php-intl php-xml php-zip php-curl php-bz2 php-json php-cgi php-cli php-mysql unzip wget -y
-sudo systemctl start apache2
-sudo systemctl enable apache2
-#sudo wget https://download.nextcloud.com/server/releases/latest.tar.bz2
-#sudo bzip2 latest.tar.bz2
-#sudo tar -xf latest.tar.bz2
-#sudo mv nextcloud /var/www/
+sudo apt install mariadb-server -y
 "@
 
 $userDataBase64 = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($userData))
