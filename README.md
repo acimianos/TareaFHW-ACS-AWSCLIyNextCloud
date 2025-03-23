@@ -1,11 +1,11 @@
 # Índice
-1. [Introducción](#Informacion sobre la tarea)
-2. [Información sobre la tarea](#Informacion sobre la tarea)
-	- [Objetivo](#Objetivo)
-	- [Requisitos previos](#Requisitos previos)
-	- [Scripts de PowerShell](#Scripts de PowerShell)
-	- [Ejecuccion de los Scripts](#Ejecucción de los scripts)
-3. [Problemas Encontrados](#Problemas encontrados)
+1. [Introducción](#Introducción)  
+2. [Información sobre la tarea](#Información-sobre-la-tarea)  
+    - [Objetivo](#Objetivo)  
+    - [Requisitos previos](#Requisitos-previos)  
+    - [Scripts de PowerShell](#Scripts-de-PowerShell)  
+    - [Ejecución de los scripts](#Ejecución-de-los-scripts)  
+3. [Problemas encontrados](#Problemas-encontrados)
 
 # Introducción
 Este repositorio ha sido creado para documentar y mostrar los scripts utilizados en la tarea "AWS: NextCloud y AWS CLI". 
