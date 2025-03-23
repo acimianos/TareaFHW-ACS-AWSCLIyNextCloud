@@ -13,7 +13,7 @@ Este repositorio ha sido creado para documentar y mostrar los scripts utilizados
 Parte del módulo **Fundamentos de Hardware, correspondiente al curso ASIR_1 (2024 - 2025)**.
 
 ## Información sobre la tarea
-###Objetivo
+### Objetivo
 El objetivo de esta tarea es desplegar una infraestructura en Amazon Web Services (AWS), formada por dos intancias **EC2 (Elastic Compute Cloud)** y una instancia **VPC (Virtual Private Cloud)**. 
 
 Sobre las instancias EC2, se desplegaran los servicions (Apache y MariaDB) necesarios para la instalación y configuración de la plataforma **NextCloud**.
@@ -27,7 +27,7 @@ Para la  ejecucción de los scripts de PowerShell, es necesario:
 
 ### Scripts de PowerShell
 Los scripts contenidos en este repositorio sirven para creación de **manera automática** de los servicios: (VPC) y (EC2) correspondientes a la plataforma de **Amazon Web Services (AWS)**.
-- ####Creación de la VPC (awscli-crea-vpc_ACS.ps1)
+- #### Creación de la VPC (awscli-crea-vpc_ACS.ps1)
 Este script creará una red virtual, formada por una subred pública y una subred privada. En el script se debe definir el **CIDR** de cada subred. Para ello, es necesario modificar las siguientes variables:
 
 ````
@@ -145,7 +145,7 @@ Private Subnet ID: subnet-0183577349b17581d
 Internet Gateway ID: igw-06c850d5460d15e6e
 NAT Gateway ID: nat-06ef5dc39b0c445d4
 ````
-###Ejecucción de los scripts
+### Ejecucción de los scripts
 Para ejecutar los scripts, es necesario abrir una consola PowerShell. Accederemos a la ruta donde tengamos los scripts y, ejecutaremos lo siguiente:
 ````
 .\awscli-crea-ec2-v2-Apache-Y-NextCloud.ps1
