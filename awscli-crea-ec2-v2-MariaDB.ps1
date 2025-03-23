@@ -94,6 +94,6 @@ $instanceId = aws ec2 run-instances `
     --output text
 
 # Muestra el ID de la instancia creada
-Write-Host "===== Angel-EC2 ==========="
+Write-Host "===== Angel-EC2-2 ==========="
 Write-Host "secury-group ID: $securityGroupId"
 Write-Output "Instancia EC2 ID: $instanceId"
