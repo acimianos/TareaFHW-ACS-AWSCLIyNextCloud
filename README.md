@@ -152,4 +152,4 @@ Para ejecutar los scripts, es necesario abrir una consola PowerShell. Accederemo
 .\awscli-crea-ec2-v2-Apache-Y-NextCloud.ps1
 ````
 ## Problemas encontrados
-A la hora de intentar automatizar la descarga de los ficheros necesarios para desplegar NextCloud, la velocidad de descarga era demasiado lenta. En el script correspondiente a la instancia EC2 de Apache y NextCloud, las lineas correspondientes están comentadas.
+A la hora de intentar automatizar la descarga de los ficheros necesarios para desplegar NextCloud, la velocidad de descarga era demasiado lenta. En el script correspondiente a la instancia EC2 de Apache y NextCloud, las lineas que realizan esta acción están comentadas.
