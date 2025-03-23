@@ -121,7 +121,7 @@ sudo systemctl enable apache2
 $userDataBase64 = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($userData))
 ````
 La variable $userData almacenará las instrucciones bash. Es necesario que estás instrucciones estén en base 64.
-Por último, a la hora de crear la instancia EC2, se añadirá el parámetro `````--user-data $userDataBase64````:
+Por último, a la hora de crear la instancia EC2, se añadirá el parámetro ````--user-data $userDataBase64````:
 ````
 $instanceId = aws ec2 run-instances `
     --image-id $amiId `
