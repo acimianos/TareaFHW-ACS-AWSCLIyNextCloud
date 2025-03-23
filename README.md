@@ -19,8 +19,8 @@ El objetivo de esta tarea es desplegar una infraestructura en Amazon Web Service
 Sobre las instancias EC2, se desplegaran los servicions (Apache y MariaDB) necesarios para la instalación y configuración de la plataforma **NextCloud**.
 
 ### Requisitos previos
-Para la  ejecucción de los scripts de PowerShell, es necesario:
-- Permitir la ejecucción de scripts de PowerShell en nuestro sistema operativo.
+Para la  Ejecución de los scripts de PowerShell, es necesario:
+- Permitir la Ejecución de scripts de PowerShell en nuestro sistema operativo.
 - Programa AWS CLI.
 - Acceso desde AWS CLI a nuestra cuenta.
 - Laboratorio.
@@ -57,7 +57,7 @@ $privateSubnetId = (aws ec2 create-subnet `
     --tag-specifications 'ResourceType=subnet,Tags=[{Key=Name,Value=ACSNextCloud-privada}]' `
     --query 'Subnet.SubnetId' --output text)
 ````
-Al final la ejecucción de script, saldrá por pantalla un mensaje con los IDs correspondientes a la VPC y sus dos subredes:
+Al final la Ejecución de script, saldrá por pantalla un mensaje con los IDs correspondientes a la VPC y sus dos subredes:
 ````
 ===== ACS-NextCloud ===========
 	VPC ID: vpc-0189b387969b6fe42
@@ -145,7 +145,7 @@ Private Subnet ID: subnet-0183577349b17581d
 Internet Gateway ID: igw-06c850d5460d15e6e
 NAT Gateway ID: nat-06ef5dc39b0c445d4
 ````
-### Ejecucción de los scripts
+### Ejecución de los scripts
 Para ejecutar los scripts, es necesario abrir una consola PowerShell. Accederemos a la ruta donde tengamos los scripts y, ejecutaremos lo siguiente:
 ````
 .\awscli-crea-ec2-v2-Apache-Y-NextCloud.ps1
